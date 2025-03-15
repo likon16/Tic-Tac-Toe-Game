@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b5c18284;
+    overflow: hidden;
+    /* background-image: linear-gradient(cyan,rgb(233, 123, 123)); */
+}
+
+h1{
+    margin-top: -7rem;
+    margin-bottom: 4rem;
+    background-color: rgb(241, 163, 6);
+    padding: 1rem;
+    border-radius: 20%;
+    color: azure;
+}
+
+.game-container {
+    text-align: center;
+   
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-image:linear-gradient(rgb(18, 225, 215),rgb(18, 196, 216));
+    /* background-color: black; */
+    border: 5px solid #f4fdf8;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+/* .cell:hover{
+    background-color: #00f;
+} */
+
+.cell.x {
+    color: #f00;
+}
+
+.cell.o {
+    color: #00f;
+}
+
+.status {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #f4fdf8;
+    background-color: #f00;
+    border-radius: 30%;
+}
+
+
+.reset:hover{
+    background-color: aqua;
+    color: black;
+}
+
